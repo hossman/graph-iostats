@@ -37,7 +37,7 @@ set xdata time
 set timefmt "%Y-%m-%d %H:%M:%S"
 set format x "%H:%M\n%d/%m"
 set xtics nomirror scale 3,2
-set ylabel "Miliseconds"
+set ylabel "%"
 set samples 10
 set key below
 plot \
