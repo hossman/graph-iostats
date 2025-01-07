@@ -9,7 +9,7 @@ WS=$(required_header_index 'w/s' "$4")
 #=$(required_header_index '' "$4")
 
 gnuplot <<_EOF_
-set terminal png
+set terminal png size 1280,960
 set output "$3"
 set title "$2: Read/Write requests"
 set xdata time

@@ -14,7 +14,7 @@ fi
 if [ ! -z "$AVG" ]; then
   
   gnuplot <<_EOF_
-set terminal png
+set terminal png size 1280,960
 set output "$3"
 set title "$2: Request Sizes$EXT"
 set xdata time
@@ -33,7 +33,7 @@ READ=$(required_header_index 'rareq-sz' "$4")
 WRITE=$(required_header_index 'wareq-sz' "$4")
 
 gnuplot <<_EOF_
-set terminal png
+set terminal png size 1280,960
 set output "$3"
 set title "$2: Request Sizes"
 set xdata time

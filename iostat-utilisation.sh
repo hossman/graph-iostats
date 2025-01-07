@@ -5,7 +5,7 @@ source $(dirname $0)/_utils.sh
 UTIL=$(required_header_index '%util' "$4")
 
 gnuplot <<_EOF_
-set terminal png
+set terminal png size 1280,960
 set output "$3"
 set title "$2: Utilisation"
 set xdata time

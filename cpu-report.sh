@@ -30,7 +30,7 @@ CPU_IOSTATS=$(mktemp "$IOSTATS.cpu.tmp.XXXXXX")
 cat $1 | grep -A 1 avg-cpu | grep -v avg-cpu | grep -v -- '--' > $CPU_IOSTATS
 
 gnuplot <<_EOF_
-set terminal png
+set terminal png size 1280,960
 set output "cpu.png"
 set title "Avg CPU"
 set xdata time

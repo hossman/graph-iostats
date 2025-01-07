@@ -7,7 +7,7 @@ if [ ! -z "$AWAIT" ]; then
   SVCTM=$(required_header_index 'svctm' "$4")
 
   gnuplot <<_EOF_
-set terminal png
+set terminal png size 1280,960
 set output "$3"
 set title "$2: Service time"
 set xdata time
@@ -27,7 +27,7 @@ RAWAIT=$(header_index 'r_await' "$4")
 WAWAIT=$(header_index 'w_await' "$4")
 
 gnuplot <<_EOF_
-set terminal png
+set terminal png size 1280,960
 set output "$3"
 set title "$2: Service time"
 set xdata time

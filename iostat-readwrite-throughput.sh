@@ -6,7 +6,7 @@ RKBS=$(required_header_index 'rkB/s' "$4")
 WKBS=$(required_header_index 'wkB/s' "$4")
 
 gnuplot <<_EOF_
-set terminal png
+set terminal png size 1280,960
 set output "$3"
 set title "$2: Read/Write thoughput"
 set xdata time

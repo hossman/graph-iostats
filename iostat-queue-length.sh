@@ -10,7 +10,7 @@ if [ -z "$AVGQ" ]; then
 fi
 
 gnuplot <<_EOF_
-set terminal png
+set terminal png size 1280,960
 set output "$3"
 set title "$2: Queue Size"
 set xdata time
